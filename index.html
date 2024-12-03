@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloggy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkO3G2LodGqB7QYJOM99j5CW6aZKvRY5wI7w&s" type="image/png">
+</head>
+<body>
+  <header>
+    <div class="logo">Bloggy</div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="filterCategory('all')">All</a></li>
+        <li><a href="#" onclick="filterCategory('technology')">Technology</a></li>
+        <li><a href="#" onclick="filterCategory('travel')">Travel</a></li>
+        <li><a href="#" onclick="filterCategory('lifestyle')">Lifestyle</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Welcome to our website Bloggy</h1>
+      <p>Explore articles across technology, travel, lifestyle, and more!</p>
+    </section>
+
+    <section id="articles">
+      <!-- Articles dynamically generated here -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit_contact.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Creative Blog. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
